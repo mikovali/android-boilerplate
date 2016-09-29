@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0-beta1'
+        classpath 'com.android.tools.build:gradle:2.2.0'
     }
 }
 
@@ -14,7 +14,7 @@ repositories {
 }
 
 ext {
-    androidSupportLibraryVersion = '24.1.1'
+    androidSupportLibraryVersion = '24.2.1'
 }
 
 dependencies {
@@ -22,7 +22,7 @@ dependencies {
 }
 
 android {
-    buildToolsVersion '24.0.1'
+    buildToolsVersion '24.0.3'
     compileSdkVersion 24
 
     defaultConfig {
