@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0'
+        classpath 'com.android.tools.build:gradle:2.2.1'
     }
 }
 
@@ -29,7 +29,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 24
 
-        applicationId 'io.github.mikovali.android.boilerplate'
+        applicationId 'io.github.mikovali.boilerplate'
         versionCode Integer.parseInt(appVersionCode)
         versionName appVersionName
     }

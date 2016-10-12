@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.github.mikovali.android.boilerplate">
+    package="io.github.mikovali.boilerplate.android">
 
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher">
 
-        <activity android:name=".Activity" />
+        <activity android:name=".Activity"
+            android:exported="true" />
 
         <activity-alias
             android:name="LauncherActivity"
