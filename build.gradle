@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.android.tools.build:gradle:2.2.3'
     }
 }
 
@@ -14,7 +14,7 @@ repositories {
 }
 
 ext {
-    androidSupportLibraryVersion = '25.0.1'
+    androidSupportLibraryVersion = '25.1.0'
 }
 
 dependencies {
@@ -25,12 +25,12 @@ dependencies {
 }
 
 android {
-    buildToolsVersion '25.0.1'
-    compileSdkVersion 24
+    buildToolsVersion '25.0.2'
+    compileSdkVersion 25
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 24
+        targetSdkVersion 25
 
         applicationId 'io.github.mikovali.boilerplate'
         versionCode Integer.parseInt(appVersionCode)
