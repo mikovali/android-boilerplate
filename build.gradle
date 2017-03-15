@@ -14,7 +14,7 @@ repositories {
 }
 
 ext {
-    androidSupportLibraryVersion = '25.2.0'
+    androidSupportLibraryVersion = '25.3.0'
 }
 
 dependencies {
