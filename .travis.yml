@@ -1,6 +1,14 @@
 language: android
+
 android:
   components:
     - build-tools-26.0.2
     - android-26
     - sys-img-x86-google_apis_playstore-26
+
+# Emulator Management: Create, Start and Wait
+before_script:
+  - echo no | avdmanager create avd -n test -k "system-images;android-26;google_apis_playstore;x86" -f
+  - emulator -avd test -no-audio -no-window &
+  - android-wait-for-emulator
+  - adb shell input keyevent 82 &
