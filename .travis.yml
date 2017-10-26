@@ -1,1 +1,4 @@
 language: android
+android:
+  components:
+    - build-tools-27.0.0
