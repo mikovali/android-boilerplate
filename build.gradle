@@ -1,9 +1,10 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.0.0'
     }
 }
 
@@ -15,7 +16,7 @@ repositories {
 }
 
 ext {
-    androidSupportLibraryVersion = '26.0.0'
+    androidSupportLibraryVersion = '27.0.0'
 }
 
 dependencies {
@@ -23,7 +24,6 @@ dependencies {
 }
 
 android {
-    buildToolsVersion '26.0.1'
     compileSdkVersion 26
 
     defaultConfig {
