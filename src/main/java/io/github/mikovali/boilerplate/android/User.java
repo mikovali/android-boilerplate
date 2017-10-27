@@ -9,6 +9,6 @@ public final class User {
     }
 
     public String name() {
-        return null;
+        return name;
     }
 }
