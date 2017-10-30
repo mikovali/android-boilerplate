@@ -34,4 +34,10 @@ android {
         versionCode Integer.parseInt(appVersionCode)
         versionName appVersionName
     }
+
+    externalNativeBuild {
+        cmake {
+            path 'CMakeLists.txt'
+        }
+    }
 }
