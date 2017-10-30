@@ -10,7 +10,8 @@ android:
     - android-22
     - android-26
     - sys-img-armeabi-v7a-google_apis-22
-    - 'cmake;3.6.4111459'
+    - tools
+    - platform-tools
 
 before_script:
   - echo no | android create avd -f -n test -t android-22 -b armeabi-v7a -g google_apis
