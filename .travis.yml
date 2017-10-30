@@ -10,6 +10,7 @@ android:
     - android-22
     - android-26
     - sys-img-armeabi-v7a-google_apis-22
+    - 'cmake;3.6.4111459'
 
 before_script:
   - echo no | android create avd -f -n test -t android-22 -b armeabi-v7a -g google_apis
@@ -20,7 +21,3 @@ before_script:
 before_install:
   - git clone https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
   - export ANDROID_NDK_HOME=$HOME/android-ndk-root
-
-licenses:
-  - 'android-sdk-preview-license-.+'
-  - 'android-sdk-license-.+'
