@@ -3,16 +3,23 @@ cache: false
 env:
   global:
     - ADB_INSTALL_TIMEOUT=8
+
 android:
   components:
     - build-tools-26.0.2
     - android-22
     - android-26
     - sys-img-armeabi-v7a-google_apis-22
+    - tools
+    - platform-tools
+    - ndk-bundle
 
-# Emulator Management: Create, Start and Wait
 before_script:
   - echo no | android create avd -f -n test -t android-22 -b armeabi-v7a -g google_apis
   - emulator -avd test -no-window -wipe-data &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
+
+before_install:
+  - git clone https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
+  - export ANDROID_NDK_HOME=$HOME/android-ndk-root
